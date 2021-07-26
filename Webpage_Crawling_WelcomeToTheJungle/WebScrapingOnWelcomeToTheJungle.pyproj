@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fe0af629-d6c7-4cdb-a528-0c291cacfc97</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>Webpage_Crawling_WelcomeToTheJungle.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Webpage_Crawling_WelcomeToTheJungle</Name>
+    <Name>WebScrapingOnWelcomeToTheJungle</Name>
     <RootNamespace>Webpage_Crawling_WelcomeToTheJungle</RootNamespace>
     <InterpreterId>MSBuild|myPipEnvForWebCrawling|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
