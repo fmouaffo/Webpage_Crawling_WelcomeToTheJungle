@@ -108,12 +108,12 @@ def webScrapingSinglePage (page_number:int, searchJob:str, driverPath:str, drive
             elif (jobItemType == "date"):
                 Job_update_list.append(jobItem.find_elements_by_tag_name("span")[1].text)
 
-    result_df = pd.DataFrame(np.array([logoLinkList, 
-                                       company_list, 
+    result_df = pd.DataFrame(np.array([company_list, 
                                        job_type_list, 
                                        Job_update_list, 
-                                       job_location_list]).transpose(),
-                             columns=["Logosrc", "Company", "Contract_type", "Last_update", "Location"])
+                                       job_location_list,
+                                       logoLinkList]).transpose(),
+                             columns=["Company", "Contract_type", "Last_update", "Location", "Logosrc"])
     
 
     # Checking the next page
