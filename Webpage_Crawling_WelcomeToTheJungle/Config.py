@@ -6,4 +6,5 @@ DRIVER_NAME = 'chromedriver.exe'    # give the driver name
 DRIVER_TYPE = 'Chrome'              # give the driver path
 DRIVER_PATH = os.path.join(HOME_FOLDER, DRIVER_NAME)
 
-Language = 'french'  # choose between french and english
+jobToCheck = 'data scientist' # choose the object of search into welcome to the jungle website
+languageOfWebPage = 'french'  # choose between fr, es, en, cs, sk

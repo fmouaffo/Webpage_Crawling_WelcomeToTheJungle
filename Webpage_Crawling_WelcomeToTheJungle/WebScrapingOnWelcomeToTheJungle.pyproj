@@ -5,14 +5,14 @@
     <ProjectGuid>fe0af629-d6c7-4cdb-a528-0c291cacfc97</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Webpage_Crawling_WelcomeToTheJungle.py</StartupFile>
+    <StartupFile>WebScraping.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>WebScrapingOnWelcomeToTheJungle</Name>
     <RootNamespace>Webpage_Crawling_WelcomeToTheJungle</RootNamespace>
-    <InterpreterId>MSBuild|myPipEnvForWebCrawling|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|myPipEnvForWebCrawling1|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,11 +26,22 @@
     <Compile Include="Config.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Webpage_Crawling_WelcomeToTheJungle.py" />
+    <Compile Include="WebScraping.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="..\..\myPipEnvForWebCrawling\">
       <Id>myPipEnvForWebCrawling</Id>
+      <Version>3.9</Version>
+      <Description>myPipEnvForWebCrawling (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="..\..\myPipEnvForWebCrawling\">
+      <Id>myPipEnvForWebCrawling1</Id>
       <Version>3.9</Version>
       <Description>myPipEnvForWebCrawling (Python 3.9 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
