@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>Webpage_Crawling_WelcomeToTheJungle</Name>
     <RootNamespace>Webpage_Crawling_WelcomeToTheJungle</RootNamespace>
+    <InterpreterId>MSBuild|myPipEnvForWebCrawling|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Config.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Webpage_Crawling_WelcomeToTheJungle.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="..\..\myPipEnvForWebCrawling\">
+      <Id>myPipEnvForWebCrawling</Id>
+      <Version>3.9</Version>
+      <Description>myPipEnvForWebCrawling (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
